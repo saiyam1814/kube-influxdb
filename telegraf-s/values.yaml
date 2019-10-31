@@ -64,7 +64,7 @@ config:
   outputs:
     - influxdb:
         urls:
-          - "http://tickstackcluster.com:30082"
+          - "https://2886795355-6443-ollie02.environments.katacoda.com:30082"
         database: "telegraf"
         username: "admin"
         password: "admin"
@@ -72,15 +72,15 @@ config:
   inputs:
     - influxdb:
         urls:
-          - "https://2886795288-30082-cykoria04.environments.katacoda.com/debug/vars"
+          - "https://2886795355-30082-ollie02.environments.katacoda.com/debug/vars"
         timeout: "5s"
     - kapacitor:
         urls:
-          - "https://2886795288-30083-cykoria04.environments.katacoda.com"
+          - "https://2886795355-30083-ollie02.environments.katacoda.com"
         timeout: "5s"
     - kapacitor:
         urls:
-          - "http://tickstackcluster.com:30083/debug/vars"
+          - "https://2886795355-30083-ollie02.environments.katacoda.com/debug/vars"
         timeout: "5s"
     - cpu:
     - system:
@@ -121,7 +121,7 @@ config:
         ratelimit: 10
         namespace: "AWS/ELB"
     - kube_inventory:
-        url: "https://2886795288-6443-cykoria04.environments.katacoda.com"
+        url: "https://2886795355-6443-ollie02.environments.katacoda.com"
         namespace: ""
 ##      prometheus:
 ##        urls:
