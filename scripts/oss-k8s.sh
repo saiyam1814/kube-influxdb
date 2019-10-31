@@ -45,7 +45,7 @@ function create_chart
 	chronograf_port=30088
 
 	# Replace Any NodeIP/URL
-	cluster_name="tickstackcluster.com"
+	cluster_name="https://2886795288-6443-cykoria04.environments.katacoda.com"
 	kubectl config set-context $(kubectl config current-context) --namespace=tick
 
 	
