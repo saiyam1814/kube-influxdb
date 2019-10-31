@@ -72,11 +72,11 @@ config:
   inputs:
     - influxdb:
         urls:
-          - "http://tickstackcluster.com:30082/debug/vars"
+          - "https://2886795288-30082-cykoria04.environments.katacoda.com/debug/vars"
         timeout: "5s"
     - kapacitor:
         urls:
-          - "http://tickstackcluster.com:30083"
+          - "https://2886795288-30083-cykoria04.environments.katacoda.com"
         timeout: "5s"
     - kapacitor:
         urls:
@@ -121,7 +121,7 @@ config:
         ratelimit: 10
         namespace: "AWS/ELB"
     - kube_inventory:
-        url: "http://tickstackcluster.com:"
+        url: "https://2886795288-6443-cykoria04.environments.katacoda.com"
         namespace: ""
 ##      prometheus:
 ##        urls:
