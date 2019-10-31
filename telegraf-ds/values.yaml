@@ -36,7 +36,7 @@ config:
     flush_jitter: "0s"
   outputs:
     - influxdb:
-        url: "http://tickstackcluster.com:30082"
+        url: "https://2886795288-30082-cykoria04.environments.katacoda.com/"
         database: "telegraf"
         retention_policy: ""
         timeout: "5s"
@@ -46,7 +46,7 @@ config:
         insecure_skip_verify: false
   inputs:
     - kubernetes:
-        url: "http://$HOSTIP:10255"
+        url: "https://2886795288-6443-cykoria04.environments.katacoda.com"
         bearer_token: "/var/run/secrets/kubernetes.io/serviceaccount/token"
         insecure_skip_verify: true
     - docker: 
@@ -57,7 +57,7 @@ config:
         docker_label_exclude:
           - "annotation.kubernetes.io/*"
     - prometheus:
-        urls: ["http://tickstackcluster.com:30080/metrics","http://tickstackcluster.com:30081/metrics"]
+        urls: ["https://2886795288-30080-cykoria04.environments.katacoda.com/metrics","https://2886795288-30081-cykoria04.environments.katacoda.com/metrics"]
     - cpu:
     - system:
     - disk:
